@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Contact / Support / Ticket / Message / Feedback Form</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://shreyascyber.com/hesk/img/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://shreyascyber.com/hesk/img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://shreyascyber.com/hesk/img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="https://shreyascyber.com/hesk/img/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="https://shreyascyber.com/hesk/img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="https://shreyascyber.com/hesk/img/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#2d89ef" />
+    <meta name="msapplication-config" content="https://shreyascyber.com/hesk/img/favicon/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="stylesheet" media="all" href="https://shreyascyber.com/hesk/theme/hesk3/customer/css/dropzone.min.css" />
+    <link rel="stylesheet" media="all" href="https://shreyascyber.com/hesk/theme/hesk3/customer/css/app.min.css" />
+    <!--[if IE]>
+    <link rel="stylesheet" media="all" href="https://shreyascyber.com/hesk/theme/hesk3/customer/css/ie9.css" />
+    <![endif]-->
+    <style>
+        .form-footer .btn {
+            margin-top: 20px;
+        }
+    </style>
+    <!-- Custom code to be included before </head> tag --></head>
+
+<body class="cust-help">
+
+
+<!-- Custom code to be included after <body> tag --><div class="wrapper">
+    <main class="main">
+        <header class="header">
+            <div class="contr">
+                <div class="header__inner">
+                    <a href="https://example.com" class="header__logo">
+                        Contact / Support / Ticket / Message / Feedback Form                    </a>
+                                    </div>
+            </div>
+        </header>
+        <div class="breadcrumbs">
+            <div class="contr">
+                <div class="breadcrumbs__inner">
+                    <a href="https://example.com">
+                        <span>mywebsite.com</span>
+                    </a>
+                    <svg class="icon icon-chevron-right">
+                        <use xlink:href="https://cdn.jsdelivr.net/gh/linuxguist/files@main/sprite.svg#icon-chevron-right"></use>
+                    </svg>
+                    <a href="#">
+                        <span>Support</span>
+                    </a>
+                    <svg class="icon icon-chevron-right">
+                        <use xlink:href="https://cdn.jsdelivr.net/gh/linuxguist/files@main/sprite.svg#icon-chevron-right"></use>
+                    </svg>
+                    <a href="#">
+                        <span>Submit</span>
+                    </a>
+                    <svg class="icon icon-chevron-right">
+                        <use xlink:href="https://cdn.jsdelivr.net/gh/linuxguist/files@main/sprite.svg#icon-chevron-right"></use>
+                    </svg>
+                    <div class="last">General</div>
+                </div>
+            </div>
+        </div>
+        <div class="main__content">
+            <div class="contr">
+                <div style="margin-bottom: 20px;">
+                                    </div>
+                <h3 class="article__heading article__heading--form">
+                    <div class="icon-in-circle">
+                        <svg class="icon icon-submit-ticket">
+                            <use xlink:href="https://cdn.jsdelivr.net/gh/linuxguist/files@main/sprite.svg#icon-submit-ticket"></use>
+                        </svg>
+                    </div>
+                    <span class="ml-1">Your Message</span>
+                </h3>
+                <div class="article-heading-tip">
+                    <span>Required fields are marked with</span>
+                    <span class="label required"></span>
+                </div>
+                <form class="form form-submit-ticket ticket-create " method="post" action="somefile.php" name="form1" id="form1" enctype="multipart/form-data">
+                    <section class="form-groups">
+                        <div class="form-group error">
+                            <label class="label required">Name:</label>
+                            <input type="text" name="name" class="form-control " maxlength="50" value="" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="label required">Email:</label>
+                            <input type="email"
+                                   class="form-control "
+                                   name="email" id="email" maxlength="1000"
+                                   value=""  onblur="HESK_FUNCTIONS.suggestEmail('email', 'email_suggestions', 0)"                                   required>
+                            <div id="email_suggestions"></div>
+                        </div>
+                                            </section>
+                                            <section class="param">
+                            <span class="label required ">Priority:</span>
+                            <div class="dropdown-select center out-close priority">
+                                <select name="priority">
+                                                                        <option value="low" >
+                                        Low                                    </option>
+                                    <option value="medium" >
+                                        Medium                                    </option>
+                                    <option value="high" >
+                                        High                                    </option>
+                                </select>
+                            </div>
+                        </section>
+                                            <div class="divider"></div>
+                                                    <div class="form-group">
+                                <label class="label required">
+                                    Subject:
+                                </label>
+                                <input type="text" class="form-control "
+                                       name="subject" maxlength="70"
+                                       value=""
+                                       required>
+                            </div>
+                                                        <div class="form-group">
+                                <label class="label required">
+                                    Message:
+                                </label>
+                                <textarea class="form-control "
+                                          name="message" rows="12" cols="60"
+                                          required></textarea>
+                                                            </div>
+                                                    <div class="divider"></div>
+                        <section class="param param--attach">
+                            <span class="label">Attachments:</span>
+                            <div class="attach">
+                                <div>
+                                    <div class="dropzone dz-click-filedrop" id="filedrop">
+        <div class="fallback">
+            <input type="hidden" name="use-legacy-attachments" value="1"><input type="file" name="attachment[1]" size="50"  /><br /><input type="file" name="attachment[2]" size="50"  /><br /></div>
+    </div>
+    <div class="btn btn-full fileinput-button filedropbutton-filedrop dz-click-filedrop">Add file</div><div id="attachment-holder-filedrop" class="hide"></div>                                </div>
+                                
+                            </div>
+                        </section>
+                        <div class="divider"></div>
+                                            
+
+<!---------Captcha Starts Here----------> 
+
+<li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName"> 
+Captcha:
+</label>
+
+
+
+    <script type="text/javascript">
+
+   //Created / Generates the captcha function    
+    function DrawCaptcha()
+    {
+        var a = Math.ceil(Math.random() * 10)+ '';
+        var b = Math.ceil(Math.random() * 10)+ '';       
+        var c = Math.ceil(Math.random() * 10)+ '';  
+        var d = Math.ceil(Math.random() * 10)+ '';  
+        var e = Math.ceil(Math.random() * 10)+ '';  
+        var f = Math.ceil(Math.random() * 10)+ '';  
+        var g = Math.ceil(Math.random() * 10)+ '';  
+        var code = a + ' ' + b + ' ' + ' ' + c + ' ' + d + ' ' + e + ' '+ f + ' ' + g;
+        document.getElementById("txtCaptcha").value = code
+    }
+
+    // Validate the Entered input aganist the generated security code function   
+    function ValidCaptcha(){
+        var str1 = removeSpaces(document.getElementById('txtCaptcha').value);
+        var str2 = removeSpaces(document.getElementById('txtInput').value);
+        if (str1 == str2) { 
+            document.getElementById("recaptcha-submit").disabled = false;
+            return true; 
+            }       
+        return false;
+        
+    }
+
+    // Remove the spaces from the entered and generated code
+    function removeSpaces(string)
+    {
+        return string.split(' ').join('');
+    }
+    
+ 
+    </script>
+    
+
+<table>
+<tr>
+    <td>
+        <input type="text" id="txtCaptcha" 
+            style="background-color:#e7d16c; text-align:center; border:none;
+            font-weight:bold; font-family:Verdana; font-size:14px; width:234px;" />
+        <input type="button" id="btnrefresh" value="Refresh" onclick="DrawCaptcha();" />
+    </td>
+</tr>
+<tr>    
+    <td>
+        <input type="text" id="txtInput" placeholder="Please Type Captcha Here" style="width:234px;" required/>    
+    </td>
+</tr>
+<tr>
+    <td>
+        <input id="Button1" type="button" value="Check" onclick="alert('Captcha Verification is : ' + ValidCaptcha());"/>
+    </td>
+</tr>
+</table>
+</body>
+    
+<!-------Captcha Ends Here----------> 
+
+
+                    <div class="divider"></div>
+                        
+
+                    <div class="form-footer">
+                        <input type="hidden" name="token" value="406e9b85d8732a2d1816fbdc06683a512e5cbc0e">
+                        <input type="hidden" name="category" value="1">
+                        <button type="submit" class="btn btn-full" ripple="ripple" id="recaptcha-submit" disabled>
+                            Submit Message                        </button>
+                        <!-- Do not delete or modify the code below, it is used to detect simple SPAM bots -->
+                        <input type="hidden" name="hx" value="3" /><input type="hidden" name="hy" value="">
+                        <!-- >
+                        <input type="text" name="phone" value="3">
+                        < -->
+                    </div>
+                                    </form>
+            </div>
+        </div>
+    </main>
+    <!-- end main -->
+</div>
+<!-- Custom code to be included before </body> tag --><script src="https://shreyascyber.com/hesk/theme/hesk3/customer/js/jquery-3.5.1.min.js"></script>
+<script src="https://shreyascyber.com/hesk/theme/hesk3/customer/js/functions.js"></script>
+<script src="https://shreyascyber.com/hesk/theme/hesk3/customer/js/svg4everybody.min.js"></script>
+<script src="https://shreyascyber.com/hesk/theme/hesk3/customer/js/selectize.min.js"></script>
+<script src="https://shreyascyber.com/hesk/theme/hesk3/customer/js/datepicker.min.js"></script>
+<script src="https://shreyascyber.com/hesk/theme/hesk3/customer/js/dropzone.min.js"></script>
+<script type="text/javascript">
+(function ($) { $.fn.datepicker.language['en'] = {
+    days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+    daysShort: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+    daysMin: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+    months: ['January','February','March','April','May','June', 'July','August','September','October','November','December'],
+    monthsShort: ['Jan','Feb','Mar','Apr','May','Jun', 'Jul','Aug','Sep','Oct','Nov','Dec'],
+    today: 'Today',
+    clear: 'Clear',
+    dateFormat: 'dd/mm/yyyy',
+    timeFormat: 'H:i:s',
+    firstDay: 0}; })(jQuery);
+</script>
+<script>
+    $(document).ready(function() {
+        $('#select_category').selectize();
+            });
+</script>
+
+    <div id="previews" style="display:none">
+        <div id="template" class="file-row">
+            <!-- This is used as the file preview template -->
+            <div class="attachment-row">
+                <div class="name-size-delete">
+                    <div class="name-size">
+                        <div class="name">
+                            <p class="name" data-dz-name></p>
+                        </div>
+                        <div class="size">
+                            (<span data-dz-size></span>)
+                        </div>
+                    </div>
+                    <div class="delete-button">
+                        <svg class="icon icon-delete" data-dz-remove>
+                            <use xlink:href="https://cdn.jsdelivr.net/gh/linuxguist/files@main/sprite_1.svg#icon-delete"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="upload-progress">
+                    <div style="border: 1px solid #d4d6e3; width: 100%; height: 19px">
+                        <div style="font-size: 1px; height: 17px; width: 0px; border: none; background-color: green" data-dz-uploadprogress>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="error">
+                <strong class="error text-danger" data-dz-errormessage></strong>
+            </div>
+        </div>
+    </div><script>const HeskWithout = (list, rejectedItem) => list.filter((item) => item !== rejectedItem).map((item) => item);</script>
+    <script>
+    Dropzone.autoDiscover = false;
+    var dropzonefiledrop = new Dropzone('#filedrop', {
+        paramName: 'attachment',
+        url: './upload_attachment.php',
+        parallelUploads: 2,
+        maxFiles: 2,
+        acceptedFiles: ".gif,.jpg,.png,.zip,.rar,.csv,.doc,.docx,.xls,.xlsx,.txt,.pdf",
+        maxFilesize: 2, // MB
+        dictDefaultMessage: "Drag files here or click the 'Add File' button below to select files to upload.",
+        dictFallbackMessage: '',
+        dictInvalidFileType: "Sorry, but the file type you tried to upload is not allowed.",
+        dictResponseError: "An error occurred when trying to upload. Please try again later.",
+        dictFileTooBig: "This attachment is larger than the max filesize permitted.",
+        dictCancelUpload: "Cancel",
+        dictCancelUploadConfirmation: "Are you sure you want to cancel this upload?",
+        dictRemoveFile: "Remove attachment",
+        dictMaxFilesExceeded: "This file will not be uploaded becuase you have already uploaded the maximum number of files allowed.",
+        previewTemplate: $('#previews').html(),
+        clickable: '.dz-click-filedrop',
+        uploadMultiple: false
+    });
+    
+    dropzonefiledrop.on('success', function(file, response) {
+        var jsonResponse = JSON.parse(response);
+        // console.log(JSON.stringify(jsonResponse, null, 4));
+
+        if(jsonResponse.hasOwnProperty('status') && jsonResponse['status'] == 'failure'){
+            // Upload was OK, but something failed on the server-side
+            dropzonefiledrop.emit('uploadprogress', file, 0);
+            dropzonefiledrop.files = HeskWithout(dropzonefiledrop.files, file);
+            dropzonefiledrop.options.error(file, jsonResponse['message']);
+        } else {
+            // The response will only be a JSON object holding the saved and real name
+            outputAttachmentIdHolder(jsonResponse['file_key'], 'filedrop');
+
+            // Add the database id to the file
+            file['databaseResponse'] = jsonResponse['file_key'];
+        }
+    });
+    dropzonefiledrop.on('addedfile', function() {
+        var numberOfFiles = $('#filedrop .file-row').length;
+
+        var disabled = false;
+        if (numberOfFiles >= 2) {
+            disabled = true;
+        }
+
+        $('.filedropbutton-filedrop').attr('disabled', disabled);
+    });
+    dropzonefiledrop.on('removedfile', function(file) {
+        if (file.beingRetried) {
+            return;
+        }
+    
+        // Remove the attachment from the database and the filesystem.
+        removeAttachment(filedrop, file['databaseResponse'], false);
+
+        var numberOfFiles = $('#filedrop .file-row').length;
+
+        var disabled = false;
+        if (numberOfFiles >= 2) {
+            disabled = true;
+        }
+        $('.filedropbutton-filedrop').attr('disabled', disabled);
+        
+        dropzonefiledrop.getRejectedFiles().forEach(function(file) {
+            file.beingRetried = true;
+            dropzonefiledrop.removeFile(file);
+            file.status = undefined;
+            file.accepted = undefined;
+            file.beingRetried = false;
+            dropzonefiledrop.addFile(file);
+        });
+    });
+    dropzonefiledrop.on('queuecomplete', function() {
+        $('input[type="submit"]').attr('disabled', false);
+    });
+    dropzonefiledrop.on('processing', function() {
+        $('input[type="submit"]').attr('disabled', true);
+    });
+    dropzonefiledrop.on('uploadprogress', function(file, percentage) {
+        $(file.previewTemplate).find('#percentage').text(percentage + '%');
+    });
+    dropzonefiledrop.on('error', function(file, message) {
+        $(file.previewTemplate).addClass('alert-danger');
+        
+        var actualMessage = message.title + ': ' + message.message;
+        if (!message.message) {
+            actualMessage = message;
+        }
+        
+        $(file.previewElement).addClass('dz-error').find('[data-dz-errormessage]').text(actualMessage);
+    });
+    </script>
+    <script src="https://shreyascyber.com/hesk/theme/hesk3/customer/js/app.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        console.log('document is ready now ...');
+        DrawCaptcha();
+    });
+</script>
+
+</body>
+</html>
